@@ -5,3 +5,66 @@
     color: brown;
   }
 }
+
+/* Flexbox Practice */
+
+/*
+   flex-direction
+   row
+   row-reverse
+   column
+   column-reverse
+
+*/
+
+/* 
+    flex-wrap: wrap
+    Controls direction and multiline of items
+    Blir webbläsaren mindre så skapar den flera rader av items för att allt ska synas på skärmen
+
+*/
+
+/* 
+    background-color
+    VERY GOOD FOR DEBUGGING! (space for element and size)
+*/
+
+/*  
+    justify-content
+    space == positioning
+*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: deepskyblue;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container > p {
+  background-color: black;
+  color: aliceblue;
+  font-size: 2rem;
+
+  padding: 16px;
+  margin: 16px;
+}
+
+/* GRID PRACTICE */
+
+.grid-container {
+  display: grid;
+  background-color: skyblue;
+
+  column-gap: 50px;
+  row-gap: 50px;
+  
+  grid-template-columns: auto auto auto;
+}
+
+.grid-container > p {
+  background-color: black;
+  color: aliceblue;
+  font-size: 2rem;
+}
